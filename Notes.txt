@@ -1,0 +1,5 @@
+Notes
+
+`npm init -y` - The -y option accepts all defaults
+npm install --save-dev babel-core babel-preset-es2015 browserify babelify watchify node-sass lite-server
+npm install --save bulma

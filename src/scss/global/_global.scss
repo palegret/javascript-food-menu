@@ -1,0 +1,34 @@
+body {
+	background-color: $background;
+	color: $body-color;
+	font-family: $body-font;
+	font-weight: 300;
+	height: 100%;
+	line-height: 1;
+	width: 100%;
+}
+
+h1, h2, h3, h4, h5 { 
+	font-family: $title-font;
+}
+
+.button {	
+	background-color: $button-bg;
+	border: 1px solid $button-border;
+	color: $button-bg-hover;
+	font-family: $body-font;
+	transition: all 100ms ease-out;
+	&:hover {
+		background-color: $button-bg-hover;
+		border: 1px solid $button-border;
+		color: #fff;
+	}
+}
+
+.show {
+	display: block !important;
+}
+
+.in-cart {
+	opacity: .3;
+}

@@ -1,0 +1,58 @@
+.navbar:not(:last-child) {
+	margin-bottom: 0;
+}
+
+.navbar {
+	background-color: transparent;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 100;
+	&.scrolled {
+		background-color: $navbar-bg-scrolled;
+	}
+	&.scrolled {
+		.logo {
+			display: inline-block;
+		}
+	}
+	.logo {
+		display: none;
+		margin: 20px 45px;
+		width: 30px;
+	}
+	.cart {
+		.navbar-item {
+			margin: 20px 45px;
+			position: relative;
+			.cart-items {
+				color: #fff;
+				cursor: pointer;
+				display: none;
+				font-size: 1rem;
+				position: absolute;
+				right: -10px;
+				top: -5px;
+				z-index: 10;
+				&:before {
+					background-color: $cart-items-bg;
+					border-radius: 50%;
+					content: '';
+					height: 25px;
+					left: 50%;
+					position: absolute;
+					top: 50%;
+					transform: translate(-50%, -50%);
+					width: 25px;
+					z-index: -1;
+				}
+			}
+			.fa {
+				color: #fff;
+				cursor: pointer;
+				font-size: 2rem;
+			}
+		}
+	}
+}
