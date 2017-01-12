@@ -33,6 +33,6 @@
     "watchify": "^3.8.0"
   },
   "dependencies": {
-    "bulma": "^0.3.0"
+    "bulma": "0.0.12"
   }
 }

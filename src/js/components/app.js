@@ -1,5 +1,12 @@
-import { div, addId, text } from '../builders';
+import { addId, div, text } from '../builders';
+import navbar from './navbar';
+import hero from './hero';
+import menu from './menu';
 
 export default function app() {
-  return addId(div(text('Hello, world!')), 'app-container');
+  const navbarEl = navbar();
+  const heroEl = hero();
+  const menuEl = menu();
+  const appContainerEl = addId(div(navbarEl, heroEl, menuEl), 'app-container');
+  return appContainerEl;
 }
